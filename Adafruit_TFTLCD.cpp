@@ -269,7 +269,7 @@ void Adafruit_TFTLCD::begin(uint16_t id) {
     setRotation(rotation);
     setAddrWindow(0, 0, TFTWIDTH-1, TFTHEIGHT-1);
 
-  } else if (id == 0x9341) {
+  } else if (id == 0x9341 || id == 0x0101) {
 
     uint16_t a, d;
     driver = ID_9341;
